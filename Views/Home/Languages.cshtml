@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Language>
+
+
+@foreach (var item in Model)
+{
+   
+        <li class="nav-item">
+            <a href="/Home/ChangeLanguage/@item.LanguageTitle">@item.LanguageTitle</a>
+        </li>
+
+}
